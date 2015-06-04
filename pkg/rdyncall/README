@@ -1,0 +1,17 @@
+See inst/doc/ANNOUNCEMENT.txt for an Introduction.
+
+
+Building R package from mercurial source tree
+---------------------------------------------
+
+1. install R package source from subversion
+  $ hg clone http://hg.dyncall.org/pub/dyncall/rdyncall
+
+2. install dyncall sources under rdyncall/src
+  $ ( cd rdyncall ; sh ./tools/bootstrap )
+
+3. build & install it
+  $ R CMD build rdyncall
+  $ R CMD INSTALL rdyncall_<VERSION>.tar.gz
+
+
